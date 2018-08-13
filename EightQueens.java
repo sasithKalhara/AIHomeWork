@@ -84,10 +84,12 @@ public class EightQueen {
                         if(finalCost == 0 ){
                             chessBoard.printBoard();
                             System.out.println("A Global Minimum was obtained");
+                            System.out.println("Pairs of queens attacking each other: "+ chessBoard.calculateCost()+"\n");
                         
                         }else if (finalCost<initialCost){
                             chessBoard.printBoard();
                             System.out.println("A Local Minimum was obtained");
+                            System.out.println("Pairs of queens attacking each other: "+ chessBoard.calculateCost()+"\n");
                         }
                     }
                 }
