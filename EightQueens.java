@@ -147,7 +147,7 @@ public class EightQueen {
                         }
                     }
                 }
-            }sum=sum+1; 
+            }sum++; 
         }
 //        System.out.print("Left Diagonal Attacking Pairs " + diagonalCounterLeft + "\n" );
         
