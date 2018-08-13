@@ -1,87 +1,96 @@
 Initial board:
+0 0 0 0 0 0 1 0 
 0 0 0 0 0 0 0 0 
-0 0 0 0 0 0 1 1 
-0 0 0 0 0 0 0 0 
-0 0 1 0 0 0 0 0 
-0 0 0 0 1 0 0 0 
+1 0 0 0 0 0 0 0 
 0 1 0 0 0 0 0 0 
-0 0 0 1 0 0 0 0 
-1 0 0 0 0 1 0 0 
-Pairs of attacking queens: 1
+0 0 0 0 0 0 0 1 
+0 0 0 0 1 0 0 0 
+0 0 1 0 0 0 0 0 
+0 0 0 1 0 1 0 0 
+Pairs of attacking queens: 5
 
 Best board found with the iteration of column 0
-1 0 0 0 0 0 0 0 
-0 0 0 0 0 0 1 1 
+1 0 0 0 0 0 1 0 
 0 0 0 0 0 0 0 0 
-0 0 1 0 0 0 0 0 
-0 0 0 0 1 0 0 0 
-0 1 0 0 0 0 0 0 
-0 0 0 1 0 0 0 0 
-0 0 0 0 0 1 0 0 
-Best board found with the iteration of column 1
-1 0 0 0 0 0 0 0 
-0 0 0 0 0 0 1 1 
 0 0 0 0 0 0 0 0 
-0 0 1 0 0 0 0 0 
-0 0 0 0 1 0 0 0 
 0 1 0 0 0 0 0 0 
-0 0 0 1 0 0 0 0 
-0 0 0 0 0 1 0 0 
+0 0 0 0 0 0 0 1 
+0 0 0 0 1 0 0 0 
+0 0 1 0 0 0 0 0 
+0 0 0 1 0 1 0 0 
+Pairs of queens attacking each other: 4
+
+No better board was found with the iteration of column 1
+1 0 0 0 0 0 1 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 1 
+0 0 0 0 1 0 0 0 
+0 0 1 0 0 0 0 0 
+0 0 0 1 0 1 0 0 
+
 Best board found with the iteration of column 2
-1 0 0 0 0 0 0 0 
-0 0 0 0 0 0 1 1 
-0 0 0 0 0 0 0 0 
+1 0 0 0 0 0 1 0 
 0 0 1 0 0 0 0 0 
-0 0 0 0 1 0 0 0 
-0 1 0 0 0 0 0 0 
-0 0 0 1 0 0 0 0 
-0 0 0 0 0 1 0 0 
-Best board found with the iteration of column 3
-1 0 0 0 0 0 0 0 
-0 0 0 0 0 0 1 1 
 0 0 0 0 0 0 0 0 
-0 0 1 0 0 0 0 0 
-0 0 0 0 1 0 0 0 
 0 1 0 0 0 0 0 0 
-0 0 0 1 0 0 0 0 
+0 0 0 0 0 0 0 1 
+0 0 0 0 1 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 1 0 1 0 0 
+Pairs of queens attacking each other: 3
+
+No better board was found with the iteration of column 3
+1 0 0 0 0 0 1 0 
+0 0 1 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 1 
+0 0 0 0 1 0 0 0 
+0 0 0 0 0 0 0 0 
 0 0 0 0 0 1 0 0 
+
 Best board found with the iteration of column 4
-1 0 0 0 0 0 0 0 
-0 0 0 0 0 0 1 1 
-0 0 0 0 0 0 0 0 
+1 0 0 0 0 0 1 0 
 0 0 1 0 0 0 0 0 
-0 0 0 0 1 0 0 0 
+0 0 0 0 0 0 0 0 
 0 1 0 0 0 0 0 0 
-0 0 0 1 0 0 0 0 
+0 0 0 0 0 0 0 1 
+0 0 0 0 1 0 0 0 
+0 0 0 0 0 0 0 0 
 0 0 0 0 0 1 0 0 
-Best board found with the iteration of column 5
-1 0 0 0 0 0 0 0 
-0 0 0 0 0 0 1 1 
-0 0 0 0 0 0 0 0 
+Pairs of queens attacking each other: 2
+
+No better board was found with the iteration of column 5
+1 0 0 0 0 0 1 0 
 0 0 1 0 0 0 0 0 
-0 0 0 0 1 0 0 0 
-0 1 0 0 0 0 0 0 
-0 0 0 1 0 0 0 0 
 0 0 0 0 0 0 0 0 
+0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 1 
+0 0 0 0 1 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
+
 Best board found with the iteration of column 6
 1 0 0 0 0 0 0 0 
-0 0 0 0 0 0 1 1 
-0 0 0 0 0 0 0 0 
 0 0 1 0 0 0 0 0 
-0 0 0 0 1 0 0 0 
+0 0 0 0 0 0 1 0 
 0 1 0 0 0 0 0 0 
-0 0 0 1 0 0 0 0 
-0 0 0 0 0 0 0 0 
-
-
-Board with least number of attacking queens
-1 0 0 0 0 0 0 0 
-0 0 0 0 0 0 1 1 
-0 0 0 0 0 0 0 0 
-0 0 1 0 0 0 0 0 
+0 0 0 0 0 0 0 1 
 0 0 0 0 1 0 0 0 
-0 1 0 0 0 0 0 0 
-0 0 0 1 0 0 0 0 
+0 0 0 0 0 0 0 0 
 0 0 0 0 0 0 0 0 
 Pairs of queens attacking each other: 0
+A Global Minimum was obtained with the iteration of column 6
+
+No better board was found with the iteration of column 7
+1 0 0 0 0 0 0 0 
+0 0 1 0 0 0 0 0 
+0 0 0 0 0 0 1 0 
+0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 1 
+0 0 0 0 1 0 0 0 
+0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 
 A Global Minimum was obtained
