@@ -50,47 +50,52 @@ public class EightQueen {
                     // reset to original
 			chessBoard.resetQueen(i, j);
                     }
-				// Removing marker
-				chessBoard.resetBoard(j);
-				
-				if (best) {
-					//  place queen in the best position
-					chessBoard.placeBestQueen(j, bestQueenPositions[j]);
-					System.out.println("Best board found with the iteration of column " + j);
-					chessBoard.printBoard();
-					System.out.println("Pairs of queens attacking each other: "+ chessBoard.calculateCost()+"\n");
-                                        
-                                        if (chessBoard.calculateCost() == 0 && j != 7){
-                                            climb = false;
-                                            System.out.println("A Global Minimum was obtained with the iteration of column " + j + "\n");
-                                        }else if (chessBoard.calculateCost() == 0 && j==7){
-                                            System.out.println("A Global Minimum was obtained by iterating through all columns \n");
-                                        }else if(chessBoard.calculateCost() != 0 && j==7){
-                                            System.out.println("A Local Minimum was obtained by iterating through all columns \n");
-                                        } 
-                                        
-				} else {
-					if(j < 7){
-                                            System.out.println("No better board was found with the iteration of column " + j +"\n");
-                                            chessBoard.printBoard();
-					
-					}else if(j == 7){
-                                            int finalCost = chessBoard.calculateCost();
-                                            System.out.println("No better board was found with the iteration of column " + j +"\n");
-                                            
-                                            if(finalCost == 0 ){
-                                                chessBoard.printBoard();
-                                                System.out.println("A Global Minimum was obtained");
-                                            }else if (finalCost<initialCost){
-                                                chessBoard.printBoard();
-                                                System.out.println("A Local Minimum was obtained");
-                                            }
-					}
-				}
-			} 
-			climb = false;
-		}
-	}
+                
+                chessBoard.resetBoard(j);
+                
+                if (best) {
+		//  place queen in the best position
+                chessBoard.placeBestQueen(j, bestQueenPositions[j]);
+                System.out.println("Best board found with the iteration of column " + j);
+                chessBoard.printBoard();
+                System.out.println("Pairs of queens attacking each other: "+ chessBoard.calculateCost()+"\n");
+                
+                if (chessBoard.calculateCost() == 0 && j != 7){
+                    climb = false;
+                    System.out.println("A Global Minimum was obtained with the iteration of column " + j + "\n");
+                
+                }else if (chessBoard.calculateCost() == 0 && j==7){
+                    System.out.println("A Global Minimum was obtained by iterating through all columns \n");
+                
+                }else if(chessBoard.calculateCost() != 0 && j==7){
+                    System.out.println("A Local Minimum was obtained by iterating through all columns \n");
+                }
+                
+                } else {
+                    
+                    if(j < 7){
+                        System.out.println("No better board was found with the iteration of column " + j +"\n");
+                        chessBoard.printBoard();
+                    
+                    }else if(j == 7){
+                        int finalCost = chessBoard.calculateCost();
+                        System.out.println("No better board was found with the iteration of column " + j +"\n");
+                        
+                        if(finalCost == 0 ){
+                            chessBoard.printBoard();
+                            System.out.println("A Global Minimum was obtained");
+                        
+                        }else if (finalCost<initialCost){
+                            chessBoard.printBoard();
+                            System.out.println("A Local Minimum was obtained");
+                        }
+                    }
+                }
+            }
+            climb = false;
+        
+        }
+    }
 
     public EightQueen(int[][] board, int[] positions) {
         
@@ -186,7 +191,7 @@ public class EightQueen {
 
 
     public void moveQueen(int row, int col) {
-        chessBoard[queenPositions[col]][col] = 2;
+        chessBoard[queenPositions[col]][col] = 2; 
         chessBoard[row][col] = 1;
     }
 
